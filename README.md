@@ -25,7 +25,7 @@ It then calls upon two other methods in order to assign values to the hamming di
 
 ### nrmnHamm
 
-The method nrmnHamm takes a String parameter that is the station to be compared to NRMN.
+The method `nrmnHamm` takes a String parameter that is the station to be compared to NRMN.
 A variable hammNum is created that represents the hamming distance.
 The method then goes througha for-loop that compares the characters of the parameter string to NRMN, incrementing hammNum by 1 each time the characters differ. 
 As the strings to be compared are always 4 characters, the loop runs 4 times, comparing characters at indexes 0 to 3.
@@ -33,7 +33,7 @@ The method will then return the int value hammNum.
 
 ### hammStations
 
-The method hammStations is what is used to find the number of stations with the same hamming distance as the input station.
+The method `hammStations` is what is used to find the number of stations with the same hamming distance as the input station.
 It takes two parameters, one being a String representing the input station, and the other being an int value representing the hamming distance found using nrmnHamm.
 The method creates FileInputStream and Scanner objects to read Mesonet.txt. 
 The method also creates other variables, such as numStations to keep track of the total number stations in the file, hammNum to use to compare hamming distances, and numSameDist to keep track of how many stations have the same hamming distance as the input station's.
@@ -53,4 +53,4 @@ After every STID has been compared, the file will close and return numSameDist.
 
 ### toString
 
-The toString method will simply return a string that contains the hamming distances between NRMN and the object's two stations, as well as the number of stations that have the same hamming distance.
+The `toString` method will simply return a string that contains the hamming distances between NRMN and the object's two stations, as well as the number of stations that have the same hamming distance.
